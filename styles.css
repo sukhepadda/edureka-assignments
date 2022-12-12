@@ -1,3 +1,26 @@
 *{
-    background: red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: #CE0505;
+}
+header{
+    height: 2em;
+    width: 80%;
+    margin: auto;
+    padding: 1.5em;
+    
+}
+.logo{
+    font-size: 28px;
+    border: solid 2px black;
+    border-radius: 100%;
+    padding: 2px;
+    display: inline;
+}
+nav{
+    float: right;
+    display: inline;
 }
