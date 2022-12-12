@@ -2,25 +2,51 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .header{
     background-color: #CE0505;
+    height: 80px;
 }
 header{
-    height: 2em;
     width: 80%;
     margin: auto;
-    padding: 1.5em;
+    padding: 1.2em;
     
 }
 .logo{
-    font-size: 28px;
-    border: solid 2px black;
-    border-radius: 100%;
-    padding: 2px;
-    display: inline;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 33px;
+    font-weight: bold;
+letter-spacing: 0px;
+    color: #EB2929;
+    padding: 12px 18px 12px 18px;
 }
-nav{
+.nav{
     float: right;
-    display: inline;
+
+}
+.nav-login, .nav-signup{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+.nav-login{
+    font-size: 20px;
+}
+.nav-signup{
+    background-color: #CE0505;
+    border: solid 1px white;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.sec2-heading{
+    color: #192F60;
+    margin: 40px 40px;
+    font-size: 36px;
+    font-weight: 600;
 }
