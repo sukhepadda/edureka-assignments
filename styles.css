@@ -50,3 +50,12 @@ letter-spacing: 0px;
     font-size: 36px;
     font-weight: 600;
 }
+
+.sec2-filter{
+    color: #192F60;
+    width: 260px;
+    height: 682px;
+    margin: auto 30px;
+    padding: 20px 20px;
+    box-shadow: 0px 3px 6px #9e6060;    
+}

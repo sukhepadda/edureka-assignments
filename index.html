@@ -1,43 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html&Css assignment</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <section class="header">
-            <header>
-                <a href="" style="text-decoration: none;"> <span class="logo"> e! </span> </a>
-                <span class="nav">
-                    <a class="nav-login" href="#">Login</a>                    <button class="nav-signup">Creat an account</button>
-                </span>
-            </header>
-        </section>
-        <section class="second-section">
-            <h2 class="sec2-heading">Breakfast Places in Mumbai</h2>
-            <section class="sec2-filter"></section>
-            <section class="sec2-result">
-                <div class="card1">This is 1st card</div>
-                <div class="card2">this is second card</div>
-                <div class="page-link">
-                    <ul>
-                        <li><a href="#"></a><</li>
-                        <li><a href="#"></a>1</li>
-                        <li><a href="#"></a>2</li>
-                        <li><a href="#"></a>3</li>
-                        <li><a href="#"></a>4</li>
-                        <li><a href="#"></a>5</li>
-                        <li><a href="#"></a><</li>
-                    </ul>
-                </div>
-            </section>
-        </section>
+      <section class="header">
+        <header>
+          <a href="" style="text-decoration: none">
+            <span class="logo"> e! </span>
+          </a>
+          <span class="nav">
+            <a class="nav-login" href="#">Login</a>
+            <button class="nav-signup">Creat an account</button>
+          </span>
+        </header>
+      </section>
+      <section class="second-section">
+        <h2 class="sec2-heading">Breakfast Places in Mumbai</h2>
+        <div class="sec2-filter">
+          <h2>Filters</h2>
+          <label for="location-filter">Select Location</label>
+          <select name="location" id="location" class="filter-location">
+            <option value="">Select Location</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Punjab">Punjab</option>
+          </select>
+          <br /><br />
+          <label for="cuisine-filter">Cuisine</label><br />
+          <input type="checkbox" class="select-cuisine" name="select-cuisine" />
+          North Indian<br />
+          <input type="checkbox" class="select-cuisine" name="select-cuisine" />
+          South Indian<br />
+          <input type="checkbox" class="select-cuisine" name="select-cuisine" />
+          Chinese<br />
+          <input type="checkbox" class="select-cuisine" name="select-cuisine" />
+          Fast Food<br />
+          <input type="checkbox" class="select-cuisine" name="select-cuisine" />
+          Street Food <br /><br />
+
+          <label for="cost-filter">Cost for Two</label><br />
+          <input
+            type="radio"
+            class="cost-filter"
+            name="cost-filter"
+            id=""
+            value="lessthan500"
+          />
+          Less than 500<br />
+          <input
+            type="radio"
+            class="cost-filter"
+            name="cost-filter"
+            id=""
+            value="500to1000"
+          />
+          500 to 1000<br />
+          <input
+            type="radio"
+            class="cost-filter"
+            name="cost-filter"
+            id=""
+            value="1000to1500"
+          />
+          1000 to 1500<br />
+          <input
+            type="radio"
+            class="cost-filter"
+            name="cost-filter"
+            id=""
+            value="1500to2000"
+          />
+          1500 to 2000<br />
+          <input
+            type="radio"
+            class="cost-filter"
+            name="cost-filter"
+            id=""
+            value="2000+"
+          />
+          Greater than 2000<br /><br />
+
+          <label for="sort">Sort</label><br />
+          <input
+          type="radio"
+          class="sort-filter"
+          name="sort-filter"
+          id=""
+          value="lowtohigh"
+        /> Low to High<br>
+        <input
+          type="radio"
+          class="sort-filter"
+          name="sort-filter"
+          id=""
+          value="hightolow"
+        /> High to Low<br>
+        </div>
+        <!-- <div class="sec2-result">
+          <div class="card1">This is 1st card</div>
+          <div class="card2">this is second card</div>
+          <div class="page-link">
+            <ul>
+              <li><a href="#"></a><</li>
+              <li><a href="#"></a>1</li>
+              <li><a href="#"></a>2</li>
+              <li><a href="#"></a>3</li>
+              <li><a href="#"></a>4</li>
+              <li><a href="#"></a>5</li>
+              <li><a href="#"></a>></li>
+            </ul>
+          </div>
+        </div> -->
+      </section>
     </div>
-</body>
+  </body>
 </html>
