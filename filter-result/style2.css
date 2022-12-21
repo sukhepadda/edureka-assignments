@@ -1,3 +1,50 @@
-html{
-    background-color: red;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #fbfbfb;
+}
+.navbar {
+  background-color: #ce0505;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+}
+.navbar-brand {
+  align-items: center;
+  text-align: center;
+  color: #eb2929;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 35px;
+}
+.login-btn {
+  color: white;
+  font-size: 18px;
+}
+.login-btn:hover {
+  color: white;
+}
+.sign-up-btn {
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.sign-up-btn:hover {
+  color: #eb2929;
+  background-color: white;
+}
+.filter-sort{
+    border: 1px solid red;
+}
+.results{
+    border: 1px solid red;
+
 }
