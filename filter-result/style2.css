@@ -20,6 +20,10 @@
   border-radius: 50%;
   font-size: 35px;
 }
+.navbar-brand:hover{
+  color: #ce0505;
+  cursor: pointer;
+}
 .login-btn {
   color: white;
   font-size: 18px;
@@ -38,10 +42,21 @@
   color: #eb2929;
   background-color: white;
 }
+.main-row{
+  margin-bottom: 40px;
+}
 .filter-sort{
-    border: 1px solid red;
+    box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    padding: 40px;
 }
 .results{
-    border: 1px solid red;
+    box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    margin-left: 60px;
+    
 
+}
+.apply-btn{
+  background-color: #ce0505;
+  color: aliceblue;
+  width: 100%;
 }

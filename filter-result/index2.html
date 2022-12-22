@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Food Services</title>
@@ -28,12 +30,138 @@
     <!-- main container started -->
     <div class="container">
         <h1 class="mt-4">Breakfast Places in Mumbai</h1>
-        <div class="row">
+        <div class="row main-row mt-4">
             <div class="col-md-3 filter-sort">
-                <h3>Filters</h3>
+                <form>
+                    <p class="h3">Filters</p>
+                    <div class="form-group row">
+                        <label for="select-location" class="col-form-label">Select Location</label>
+                        <div>
+                            <select class="form-control" name="location" id="location">
 
+                                <option id="opt1" value="" class="locationOption">
+                                    Select Location
+                                </option>
+                                <option value="Ludhiana" class="locationOption">Ludhiana</option>
+                                <option value="Bhopal" class="locationOption">Bhopal</option>
+                                <option value="Chandigarh" class="locationOption">
+                                    Chandigarh
+                                </option>
+                                <option value="Delhi" class="locationOption">Delhi</option>
+                                <option value="Mumbai" class="locationOption">Mumbai</option>
+                                <option value="Chennai" class="locationOption">Chennai</option>
+
+                            </select>
+                        </div>
+                    </div>
+            <!-- form dropdown over -->
+                    <div class="form-group row mt-3">
+                        <label for="select-location" class="col-form-label">Cuisine</label>                        <div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                    North Indian
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                    South Indian
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                    Chinese Food
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                    Fast Food
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                    Street Food
+                                </label>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <fieldset class="form-group mt-3">
+                        <div class="row">
+                            <legend class="col-form-label pt-0">Cost for Two</legend>
+                            <div class="">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pricefilter" id="pricefilter"
+                                        value="lessthan500" checked>
+                                    <label class="form-check-label" for="pricefilter">
+                                        less than 500
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pricefilter" id="pricefilter"
+                                        value="500to1000">
+                                    <label class="form-check-label" for="pricefilter">
+                                        500 to 1000
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pricefilter" id="pricefilter"
+                                        value="1000to1500">
+                                    <label class="form-check-label" for="pricefilter">
+                                        1000 to 1500
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pricefilter" id="pricefilter"
+                                        value="1500to2000">
+                                    <label class="form-check-label" for="pricefilter">
+                                        1500 to 2000
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pricefilter" id="pricefilter"
+                                        value="2000plus">
+                                    <label class="form-check-label" for="pricefilter">
+                                         2000+
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset class="form-group mt-5">
+                        <div class="row">
+                            <p class="h3">Sort</p>
+                            <div class="">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pricesort" id="pricesort"
+                                        value="pricelowtohigh" checked>
+                                    <label class="form-check-label" for="pricesort">
+                                        Price low to high
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pricesort" id="pricesort"
+                                        value="pricehightolow" checked>
+                                    <label class="form-check-label" for="pricesort">
+                                        Price high to low
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="mt-5">
+                        <div>
+                            <button type="submit" class="btn apply-btn">Apply</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="col-md-9 results">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</div>
+            <div class="col-md-8 results"></div>
         </div>
     </div>
     <!-- main container started -->
