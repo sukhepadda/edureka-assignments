@@ -52,6 +52,8 @@
 .results{
     box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.2);
     margin-left: 60px;
+    height: 287px;
+    margin-bottom: 60px;
     
 
 }
@@ -59,4 +61,24 @@
   background-color: #ce0505;
   color: aliceblue;
   width: 100%;
+}
+
+.row ul li{
+  margin: 10px;
+}
+.row ul li a{
+  color: #192F60;
+  border: solid 2px rgba(128, 128, 128, 0.416);
+  border-radius: 8px;
+}
+
+.active > .page-link, .page-link.active {
+  background-color: grey;
+  border: solid 2px rgba(128, 128, 128, 0.416);
+}
+
+@media only screen and (max-width: 768px) {
+  .results {
+    margin: 20px 0;
+  }
 }
