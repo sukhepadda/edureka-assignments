@@ -1,132 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Html&Css assignment</title>
-    <!-- <link rel="icon" href="" type="image/gif" sizes="16x16">  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <section class="header">
-        <header>
-          <a href="" style="text-decoration: none">
-            <span class="logo"> e! </span>
-          </a>
-          <span class="nav">
-            <a class="nav-login" href="#">Login</a>
-            <button class="nav-signup">Creat an account</button>
-          </span>
-        </header>
-      </section>
-      <section class="second-section">
-        <h2 class="sec2-heading">Breakfast Places in Mumbai</h2>
-        <div class="sec2-filter">
-          <h2>Filters</h2>
-          <label for="location-filter">Select Location</label>
-          <select name="location" id="location" class="filter-location">
-            <option value="">Select Location</option>
-            <option value="Mumbai">Mumbai</option>
-            <option value="Gujarat">Gujarat</option>
-            <option value="Kolkata">Kolkata</option>
-            <option value="Punjab">Punjab</option>
-          </select>
-          <br /><br />
-          <label for="cuisine-filter">Cuisine</label><br />
-          <input type="checkbox" class="select-cuisine" name="select-cuisine" />
-          North Indian<br />
-          <input type="checkbox" class="select-cuisine" name="select-cuisine" />
-          South Indian<br />
-          <input type="checkbox" class="select-cuisine" name="select-cuisine" />
-          Chinese<br />
-          <input type="checkbox" class="select-cuisine" name="select-cuisine" />
-          Fast Food<br />
-          <input type="checkbox" class="select-cuisine" name="select-cuisine" />
-          Street Food <br /><br />
 
-          <label for="cost-filter">Cost for Two</label><br />
-          <input
-            type="radio"
-            class="cost-filter"
-            name="cost-filter"
-            id=""
-            value="lessthan500"
-          />
-          Less than 500<br />
-          <input
-            type="radio"
-            class="cost-filter"
-            name="cost-filter"
-            id=""
-            value="500to1000"
-          />
-          500 to 1000<br />
-          <input
-            type="radio"
-            class="cost-filter"
-            name="cost-filter"
-            id=""
-            value="1000to1500"
-          />
-          1000 to 1500<br />
-          <input
-            type="radio"
-            class="cost-filter"
-            name="cost-filter"
-            id=""
-            value="1500to2000"
-          />
-          1500 to 2000<br />
-          <input
-            type="radio"
-            class="cost-filter"
-            name="cost-filter"
-            id=""
-            value="2000+"
-          />
-          Greater than 2000<br /><br />
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Services</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
-          <label for="sort">Sort</label><br />
-          <input
-          type="radio"
-          class="sort-filter"
-          name="sort-filter"
-          id=""
-          value="lowtohigh"
-        /> Low to High<br>
-        <input
-          type="radio"
-          class="sort-filter"
-          name="sort-filter"
-          id=""
-          value="hightolow"
-        /> High to Low<br>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- nav started -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand">FS</a>
+            <form class="d-flex" role="search">
+                <button class="btn login-btn" type="submit">Login</button>
+                <button class="btn sign-up-btn" type="submit">Create an account</button>
+            </form>
         </div>
-        <!-- <div class="sec2-result">
-          <div class="card1">This is 1st card</div>
-          <div class="card2">this is second card</div>
-          <div class="page-link">
-            <ul>
-              <li><a href="#"></a><</li>
-              <li><a href="#"></a>1</li>
-              <li><a href="#"></a>2</li>
-              <li><a href="#"></a>3</li>
-              <li><a href="#"></a>4</li>
-              <li><a href="#"></a>5</li>
-              <li><a href="#"></a>></li>
-            </ul>
-          </div>
-        </div> -->
-      </section>
-    </div>
-  </body>
+    </nav>
+    <!-- nav completed -->
+
+    <!-- main container started -->
+    <div class="container">
+        <h1 class="mt-4">Breakfast Places in Mumbai</h1>
+        <div class="row main-row mt-4">
+            <div class="col-md-3 filter-sort">
+                <form>
+                    <p class="h3">Filters</p>
+                    <div class="form-group row">
+                        <label for="select-location" class="col-form-label">Select Location</label>
+                        <div>
+                            <select class="form-control" name="location" id="location">
+
+                                <option id="opt1" value="" class="locationOption">
+                                    Select Location
+                                </option>
+                                <option value="Ludhiana" class="locationOption">Ludhiana</option>
+                                <option value="Bhopal" class="locationOption">Bhopal</option>
+                                <option value="Chandigarh" class="locationOption">
+                                    Chandigarh
+                                </option>
+                                <option value="Delhi" class="locationOption">Delhi</option>
+                                <option value="Mumbai" class="locationOption">Mumbai</option>
+                                <option value="Chennai" class="locationOption">Chennai</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <!-- form dropdown over -->
+                    <div class="form-group row mt-3">
+                        <label for="select-location" class="col-form-label">Cuisine</label>
+                        <div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="cuisine" id="cuisine"
+                                    value="northindian">
+                                <label class="form-check-label" for="gridCheck1">
+                                    North Indian
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="cuisine" id="cuisine"
+                                    value="southindian">
+                                <label class="form-check-label" for="gridCheck1">
+                                    South Indian
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="cuisine" id="cuisine"
+                                    value="chinesefood">
+                                <label class="form-check-label" for="gridCheck1">
+                                    Chinese Food
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="cuisine" id="cuisine"
+                                    value="fastfood">
+                                <label class="form-check-label" for="gridCheck1">
+                                    Fast Food
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="cuisine" id="cuisine"
+                                    value="streetfood">
+                                <label class="form-check-label" for="gridCheck1">
+                                    Street Food
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <fieldset class="form-group mt-3">
+                        <div class="row">
+                            <legend class="col-form-label pt-0">Cost for Two</legend>
+                            <div class="">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pricefilter" id="pricefilter"
+                                        value="lessthan500" checked>
+                                    <label class="form-check-label" for="pricefilter">
+                                        less than 500
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pricefilter" id="pricefilter"
+                                        value="500to1000">
+                                    <label class="form-check-label" for="pricefilter">
+                                        500 to 1000
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pricefilter" id="pricefilter"
+                                        value="1000to1500">
+                                    <label class="form-check-label" for="pricefilter">
+                                        1000 to 1500
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pricefilter" id="pricefilter"
+                                        value="1500to2000">
+                                    <label class="form-check-label" for="pricefilter">
+                                        1500 to 2000
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pricefilter" id="pricefilter"
+                                        value="2000plus">
+                                    <label class="form-check-label" for="pricefilter">
+                                        2000+
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group mt-5">
+                        <div class="row">
+                            <p class="h3">Sort</p>
+                            <div class="">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pricesort" id="pricesort"
+                                        value="pricelowtohigh" checked>
+                                    <label class="form-check-label" for="pricesort">
+                                        Price low to high
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pricesort" id="pricesort"
+                                        value="pricehightolow">
+                                    <label class="form-check-label" for="pricesort">
+                                        Price high to low
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="mt-5">
+                        <div>
+                            <button type="submit" class="btn apply-btn">Apply</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+            <!-- results section -->
+            <div class="col-md-9">
+                <div class="row results">
+                    <div class="col-md-3">
+                        <img src="images/food1.png" alt="food image" height="100%" width="100%" />
+                    </div>
+                    <div class="col-md-9">
+                        <h1 class="">The Big Chill Cakery</h1>
+                        <h4 class="">Fort</h4>
+                        <p class="">
+                            Shop 1, Plot D, Samruddhi Complex, Chincholi …
+                        </p>
+                    </div>
+
+                    <hr>
+
+                    <div class="productFoot">
+                        <div class="featureLabels">
+                            <p>CUISINES:</p>
+                            <p>COST FOR TWO:</p>
+                        </div>
+                        <div class="features">
+                            <p>Bakery</p>
+                            <p>₹700</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--  -->
+                <div class="row results">
+                    <div class="col-md-3">
+                        <img src="images/food1.png" alt="food image" height="100%" width="100%" />
+                    </div>
+                    <div class="col-md-9">
+                        <h1 class="">The Big Chill Cakery</h1>
+                        <h4 class="">Fort</h4>
+                        <p class="">
+                            Shop 1, Plot D, Samruddhi Complex, Chincholi …
+                        </p>
+                    </div>
+
+                    <hr>
+
+                    <div class="productFoot">
+                        <div class="featureLabels">
+                            <p>CUISINES:</p>
+                            <p>COST FOR TWO:</p>
+                        </div>
+                        <div class="features">
+                            <p>Bakery</p>
+                            <p>₹700</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item" hidden><a class="page-link" href="#"></a></li>
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                      <li class="page-item" hidden><a class="page-link" href="#">1</a></li>
+                    </ul>
+                  </nav>
+            </div>
+            <!-- main container Ended -->
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
+</body>
+
 </html>
