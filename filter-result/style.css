@@ -4,16 +4,18 @@
   color: #192F60;
 
 }
+
 .navbar {
   background-color: #ce0505;
-  padding: 20px 20px;
+  padding: 20px 10px;
   display: flex;
   justify-content: center;
 }
 .navbar-brand {
   align-items: center;
   text-align: center;
-  color: #eb2929;
+  font-weight: bolder;
+  color: #ce0505;
   background-color: white;
   width: 60px;
   height: 60px;
@@ -49,10 +51,13 @@
     box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.2);
     padding: 40px;
 }
+.form-check-input:checked {
+  background-color: #ce0505;
+  border-color: #ce0505;
+}
 .results{
     box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.2);
     margin-left: 60px;
-    height: 287px;
     margin-bottom: 60px;
     
 
@@ -61,6 +66,12 @@
   background-color: #ce0505;
   color: aliceblue;
   width: 100%;
+}
+
+.foodimg{
+  height: 120px;
+  width: 140px;
+  border-radius: 20px;
 }
 
 .row ul li{
@@ -77,8 +88,18 @@
   border: solid 2px rgba(128, 128, 128, 0.416);
 }
 
+
+@media only screen and (max-width: 372px) {
+  .login-btn {
+    font-size: 14px;
+  }
+  .sign-up-btn {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .results {
     margin: 20px 0;
   }
+  
 }
