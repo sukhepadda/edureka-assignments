@@ -9,70 +9,94 @@ body {
 #header-img {
     position: relative;
     width: 100vw;
-    height: 600px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapersdsc.net%2Fwp-content%2Fuploads%2F2016%2F09%2FFood-HD-Background.png&f=1&nofb=1');
+    height: 480px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/images/bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 header {
-    width: 100vw;
+    width: 120vw;
     height: 60px;
 }
 
 .nav-menu {
     width: 60vw;
     height: 60px;
+    margin-top: 15px;
     /* position: fixed; */
 }
 
-.navigation-link {
+.navigation-link-p {
     border: solid 0px white;
     transition: border-bottom .1s ease;
     cursor: pointer;
 }
 
-.navigation-link:hover {
+.navigation-link-p:hover {
     border-bottom: 3px solid white;
 }
+.navigation-link-btn{
+    height: 36px;
+    width: 181px;
+    font-size: 16px;
+    background: none;
+    font-weight: bolder;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: border-color .1s ease;
+    transition: color .1s ease;
 
-.zomato {
+}
+.navigation-link-btn:hover{
+    color: rgb(85, 59, 59);
+border: none;
+    background-color: wheat;
+}
+.logo-bottom {
     display: block;
     font-weight: bolder;
     color: white;
     text-align: center;
-    font-size: 68px;
+    font-size: 36px;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header-flex {
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
-
+.logo{
+    width: 147px;
+height: 147px;
+color: #EB2929;
+background-color: white;
+font-size: 85px;
+font-weight: 700;
+text-align: center;
+border-radius: 50%;
+margin: auto;
+}
 .search-box {
-    width: 30vw;
+    width: 245px;
     height: 60px;
-    background-color: white;
     border: none;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     padding-left: 20px;
+    margin: auto 20px;
     outline: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
-
-.search-btn {
-    width: 130px;
-    background-color: red;
-    color: white;
+.search-box2 {
+    width: 477px;
+    height: 60px;
     border: none;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    padding-left: 20px;
+    margin: auto 20px;
+    outline: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #second-section {
@@ -80,15 +104,14 @@ header {
 }
 
 .card {
-    width: 100%;
-    height: 200px;
+    width: 360px;
+    height: 160px;
     background-color: white;
     border: none;
-    border-radius: 10px;
     box-shadow: 1px 1px 10px white;
     overflow: hidden;
     transition: box-shadow .2s;
-    margin: 0 0 10px 0;
+    margin: 0 10px 10px 0;
 }
 
 .card:hover {
@@ -96,57 +119,3 @@ header {
     cursor: pointer;
 }
 
-.card-bottom {
-    position: absolute;
-    background-color: red;
-    height: 50px;
-    width: 100%;
-    margin: 150px 0 0 0;
-}
-
-#popular-locations {
-    margin: 50px 0 50px 0;
-}
-
-.popular-heading {
-    font-size: 40px;
-    color: black;
-}
-
-.locations-div {
-    width: 100%;
-    height: 60px;
-    background-color: white;
-    border: solid 2px #ccc;
-    border-radius: 10px;
-    cursor: pointer;
-    justify-content: center;
-    padding-top: 8%;
-}
-
-.locations-div:hover {
-    box-shadow: 1px 1px 5px #ccc;
-}
-
-#get-zomato-app {
-    margin: 50px 0 50px 0;
-    padding: 30px 0 30px 0;
-    background-color: rgba(234, 241, 130, 0.1);
-    
-}
-
-.email-input {
-    width: 250px;
-    height: 40px;
-    padding: 0 0 0 10px;
-    margin: 0 4px 0 0;
-    border: 1px solid #ccc;
-    outline: none;
-    border-radius: 10px;
-    background-color: white;
-}
-@media only screen and (max-width:768px) {
-    .locations-div{
-        margin-bottom: 10px;
-    }
-}
