@@ -4,6 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    background-color: #FBFBFB;
 }
 
 #header-img {
@@ -41,7 +42,8 @@ header {
     height: 36px;
     width: 181px;
     font-size: 16px;
-    background: none;
+    background: transparent;
+    border: 2px solid white;
     font-weight: bolder;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -77,8 +79,10 @@ font-weight: 700;
 text-align: center;
 border-radius: 50%;
 margin: auto;
+margin-top: 60px;
 }
 .search-box {
+    color: #636F88;
     width: 245px;
     height: 60px;
     border: none;
@@ -89,6 +93,7 @@ margin: auto;
     font-size: 16px;
 }
 .search-box2 {
+    color: #636F88;
     width: 477px;
     height: 60px;
     border: none;
@@ -103,21 +108,47 @@ margin: auto;
     margin: 50px 0 50px 0;
 }
 
-.card {
-    background-color: white;
-    border: none;
-    box-shadow: 1px 1px 10px white;
-    overflow: hidden;
-    transition: box-shadow .2s;
-    margin: 10px ;
-    padding: 20px;
+.second-section-title{
+    color: #192F60;
+    font-size: 30px;
+    font-weight: 600;
+}
+.second-section-title-para{
+color: #8C96AB;
 }
 
-.card:hover {
+.custum-card {
+    background-color: white;
+    border: none;
+    box-shadow: 0px 3px 6px #00000029;    overflow: hidden;
+    transition: box-shadow .2s;
+    margin: 15px;
+    /* padding: 20px; */
+    width: 360px;
+    height: 160px;
+}
+.custum-card > div > img{
+    width: 100%;
+    display: block;
+    margin-left: -12px;
+}
+
+.custum-card:hover {
     box-shadow: 1px 1px 10px black;
     cursor: pointer;
 }
-
+.card-info-div{
+    padding: 30px 0 0 0;
+}
+.card-title{
+    font-size: 18px;
+    color: #192F60;
+    margin-bottom: 4px;
+}
+.card-para{
+    font-size: 14px;
+    color: #8C96AB;
+}
 @media only screen and (max-width: 820px) {
     .nav-menu {
         display: none;
