@@ -51,19 +51,22 @@ h5 {
   height: 100%;
 }
 .form-select-menu {
-  height: 42px;
-  width: 110px;
+   height: 36.188px;
+   width: 94px;
   background: transparent;
-  padding: 9px;
+  font-size: 16px;
+  font-weight: 400;
 }
+
 .form-select-menu > option {
   background-color: grey;
 }
 .top-sign-in {
-  height: 42px;
-  width: 120px;
+  height: 36.188px;
+  width: 94px;
   padding-top: 5px;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
   background-color: #e50914;
 }
 .top-sign-in:hover {
@@ -93,11 +96,15 @@ h5 {
   cursor: pointer;
 }
 .sec-h2{
-   font-size: ;
+   font-size: 50px;
 }
 
 .sec-p{
-   font-size: ;
+   font-size: 26px;
+}
+.faq-h2{
+   font-size: 50px;
+   font-weight: 500;
 }
 .faq .btn {
   width: 100%;
@@ -121,8 +128,9 @@ h5 {
   color: #fff;
   padding-left: 30px;
 }
-.bottom-search p{
-   font-size: 22px;
+.bottomSearchPara{
+   font-size: 18px;
+   margin-top: 20px;
 }
 footer {
   background-color: #000000;
@@ -137,9 +145,11 @@ footer ul {
 footer ul li {
   color: #757575;
   margin-bottom: 15px;
+  font-size: 16px;
 }
 
 footer a {
+font-size: 13px;
   text-decoration: none;
   color: #757575;
 }
@@ -148,7 +158,26 @@ footer a:hover {
   color: #757575;
   text-decoration: underline;
 }
+.footerDropdown{
+   margin-top: 20px;
+}
 
+.form-select-menu2 {
+  background: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 30px;
+  color: white;
+}
+
+.form-select-menu2 > option {
+   background-color: grey;
+}
+.footerCredits{
+   color: #757575;
+   font-size: 13px;
+   margin-left: 30px;
+}
 @media (min-width: 1200px) {
   .main-search .input-group {
     width: 60%;
