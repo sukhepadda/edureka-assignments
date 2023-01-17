@@ -3,23 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
+    <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- title and icon -->
     <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
     <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
   </head>
   <body>
+    <!-- navbar -->
     <nav class="navbar navbar-light p-0">
       <div class="container-fluid px-5">
-        <a class="navbar-brand">Netflix</a>
+        <a href="#" class="navbar-brand">Netflix</a>
         <form class="d-flex">
-          <select class="form-select mx-4 text-white" aria-label="Default select example">
-            <option selected>English</option>
-            <option value="1">Español</option>
+          <select class="form-select-menu mx-4 text-white" aria-label="Default select example">
+            <option selected value="english">English</option>
+            <option value="hindi">हिंदी</option>
           </select>
-          <button type="button" class="btn btn-danger top-sign-in">signin</button>
+          <button type="button" class="btn btn-danger top-sign-in">Sign In</button>
         </form>
       </div>
     </nav>
@@ -27,9 +35,9 @@
       <div class="layer">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h1>Unlimited movies, TV <br>shows and more.</h1>
-            <h3>Watch anywhere. Cancel anytime.</h3>
-            <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
+            <h1 class="headerTitleOne">Unlimited movies, TV <br>shows and more.</h1>
+            <h3 class="headerTitleTwo">Watch anywhere. Cancel anytime.</h3>
+            <h5 class="headerTitleThree">Ready to watch? Enter your email to create or restart your membership.</h5>
           </div>
         </div>
         <div class="row w-100">
