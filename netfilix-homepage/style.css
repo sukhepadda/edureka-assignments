@@ -1,260 +1,246 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
- body {
-    padding: 0;
-    margin: 0;
-    font-family: "noto sans";
- }
- 
- img {
-    max-width: 100%;
- }
- 
- section {
-    border-top: 8px solid #222;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    background-color: #000000;
- }
- 
- p, h1, h2, h3, h5 {
-    color: #fff;
- }
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "noto sans";
+}
 
- .navbar {
-    position: absolute;
-    width: 100%;
- }
+img {
+  max-width: 100%;
+}
 
- .navbar-brand {
-    color: #e50914 !important;
-    font-size: 52px;
-    font-weight: bold;
- }
- 
- .bg-img {
-    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/935156fb-9579-4fc2-ad94-70680402b8ef/3689d1b9-def2-446b-bc6c-ba159a4469f8/IN-en-20230109-popsignuptwoweeks-perspective_alpha_website_small.jpg);
-    height: 700px;
- }
- 
- .layer {
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
- }
- .form-select-menu {
-   height: 42px;
-   width: 110px;
-   background:transparent;
-   padding: 9px;
+section {
+  border-top: 8px solid #222;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background-color: #000000;
 }
-.form-select-menu > option{
-   background-color: grey;
+
+p,
+h1,
+h2,
+h3,
+h5 {
+  color: #fff;
 }
- .top-sign-in {
-   height: 42px;
-   width: 120px;
-    padding-top: 5px;
-    font-size: 18px;
-    background-color: #e50914;
- }
- .top-sign-in:hover {
+.navbar {
+  position: absolute;
+  width: 100%;
+}
+
+.navbar-brand {
+  color: #e50914 !important;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.bg-img {
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/935156fb-9579-4fc2-ad94-70680402b8ef/3689d1b9-def2-446b-bc6c-ba159a4469f8/IN-en-20230109-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+  height: 700px;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.form-select-menu {
+  height: 42px;
+  width: 110px;
+  background: transparent;
+  padding: 9px;
+}
+.form-select-menu > option {
+  background-color: grey;
+}
+.top-sign-in {
+  height: 42px;
+  width: 120px;
+  padding-top: 5px;
+  font-size: 18px;
+  background-color: #e50914;
+}
+.top-sign-in:hover {
   color: #000000;
   font-weight: 600;
-    background-color: #e50914;
- }
- .headerTitleOne{
-    font-size: 72px;
-   }
-   .headerTitleTwo{
-      font-size: 42px;
-   }
-   .headerTitleThree{
-    font-size: 22px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-
- }
- .main-search input {
-   height: 60px;
+  background-color: #e50914;
 }
- .input-group-text {
-    font-size: 24px;
-    background-color: #e50914;
-    color: #fff;
-    border: 0px;
-    cursor: pointer;
- }
- 
- .btn-check:focus+.btn,
- .btn:focus {
-    box-shadow: none;
- }
- 
- 
- 
- .faq .btn {
-    width: 100%;
-    height: 72px;
-    background-color: #303030;
-    font-size: 30px;
-    padding-top: 12px;
-    text-align: left;
-    padding-left: 30px;
-    margin-bottom: 10px;
+.headerTitleOne {
+  font-size: 72px;
+}
+.headerTitleTwo {
+  font-size: 42px;
+}
+.headerTitleThree {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.main-search input {
+  height: 60px;
+}
+.input-group-text {
+  font-size: 24px;
+  background-color: #e50914;
+  color: #fff;
+  border: 0px;
+  cursor: pointer;
+}
+.sec-h2{
+   font-size: ;
+}
+
+.sec-p{
+   font-size: ;
+}
+.faq .btn {
+  width: 100%;
+  height: 72px;
+  background-color: #303030;
+  font-size: 30px;
+  padding-top: 12px;
+  text-align: left;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  border-radius: 0px;
+}
+
+.multi-collapse.show {
+  margin-bottom: 10px;
+}
+
+.faq .card {
+  background-color: #303030;
+  font-size: 26px;
+  color: #fff;
+  padding-left: 30px;
+}
+.bottom-search p{
+   font-size: 22px;
+}
+footer {
+  background-color: #000000;
+  padding-top: 40px;
+  border-top: 8px solid #222;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  color: #757575;
+  margin-bottom: 15px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #757575;
+}
+
+footer a:hover {
+  color: #757575;
+  text-decoration: underline;
+}
+
+@media (min-width: 1200px) {
+  .main-search .input-group {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .layer h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 612px) {
+  .layer h1 {
+    font-size: 50px;
+  }
+  .layer h5 {
+    font-size: 20px;
+  }
+  section h2 {
+    font-size: 40px;
+  }
+  .main-search input,
+  .input-group-text {
+    width: 100% !important;
     border-radius: 0px;
- }
- 
- .multi-collapse.show {
-    margin-bottom: 10px;
- }
- 
- .faq .card {
-    background-color: #303030;
-    font-size: 26px;
-    color: #fff;
-    padding-left: 30px;
- }
- 
- footer {
-    background-color: #000000;
-    padding-top: 40px;
-    border-top: 8px solid #222;
- }
- 
- footer ul {
-    list-style-type: none;
- }
- 
- footer ul li {
-    color: #757575;
-    margin-bottom: 15px;
- }
- 
- footer a {
-    text-decoration: none;
-    color: #757575;
- }
- 
- footer a:hover {
-    color: #757575;
-    text-decoration: underline;
- }
- 
- @media(min-width: 1200px) {
-    .main-search .input-group {
-       width: 60%;
-       margin: 0 auto;
-    }
- }
- 
- @media(max-width: 800px) {
-    .layer h1 {
-       font-size: 60px;
-    }
- }
- 
- @media(max-width: 768px) {
-    .reverse {
-       flex-direction: column-reverse;
-    }
- }
- 
- @media(max-width: 612px) {
-    .layer h1 {
-       font-size: 50px;
-    }
-    .layer h5 {
-       font-size: 20px;
-    }
-    section h2 {
-       font-size: 40px;
-    }
-    .main-search input,
-    .input-group-text {
-       width: 100% !important;
-       border-radius: 0px;
-       border: 0px;
-    }
-    .input-group-text {
-       margin-top: 5px;
-    }
-    .faq .btn {
-       font-size: 20px;
-       height: auto;
-       padding-top: 5px;
-       padding-left: 10px;
-    }
-    .faq .card {
-       font-size: 16px;
-       padding-left: 10px;
-    }
-    section p {
-       font-size: 18px;
-    }
- }
- 
- @media(max-width: 515px) {
-    .layer h1 {
-       font-size: 40px;
-    }
-    .layer h5 {
-       font-size: 16px;
-    }
-    .bottom-search p {
-       padding-left: 10px;
-       padding-right: 10px;
-    }
-    a.navbar-brand {
-       font-size: 32px;
-    }
-    .form-select-menu {
-       height: 40px;
-    }
-    .top-sign-in {
-       margin-top: 3px;
-    }
-    .px-5 {
-       padding-right: 10px!important;
-       padding-left: 10px!important;
-    }
-    .layer h3 {
-       font-size: 20px;
-    }
-    .layer h5 {
-       font-size: 14px;
-    }
- }
- 
- @media(max-width:425px) {
-    .layer h1 {
-       font-size: 34px;
-    }
- }
+    border: 0px;
+  }
+  .input-group-text {
+    margin-top: 5px;
+  }
+  .faq .btn {
+    font-size: 20px;
+    height: auto;
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+  .faq .card {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  section p {
+    font-size: 18px;
+  }
+}
 
+@media (max-width: 515px) {
+  .layer h1 {
+    font-size: 40px;
+  }
+  .layer h5 {
+    font-size: 16px;
+  }
+  .bottom-search p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  a.navbar-brand {
+    font-size: 32px;
+  }
+  .form-select-menu {
+    height: 40px;
+  }
+  .top-sign-in {
+    margin-top: 3px;
+  }
+  .px-5 {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+  .layer h3 {
+    font-size: 20px;
+  }
+  .layer h5 {
+    font-size: 14px;
+  }
+}
 
+@media (max-width: 425px) {
+  .layer h1 {
+    font-size: 34px;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* * {
+/* * {
   box-sizing: border-box;
   font-family: "Segoe UI";
 }
@@ -388,4 +374,3 @@ main > div > .btn2 span {
 .content4 > .container > div > .content-img{
     margin-top: 35px;
 } */
-
