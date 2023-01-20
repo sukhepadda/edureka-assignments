@@ -72,6 +72,7 @@
   height: 120px;
   width: 140px;
   border-radius: 20px;
+  display: block;
 }
 
 .row ul li {
