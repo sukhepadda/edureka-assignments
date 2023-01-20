@@ -1,17 +1,19 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "noto sans";
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  padding: 0px;
+  margin: 0px;
 }
 
 img {
@@ -43,13 +45,14 @@ h5 {
   font-weight: bold;
   width: 190px;
 }
-.nav-logo{
-   width:100%;
+.nav-logo {
+  width: 100%;
 }
 
 .bg-img {
   background-image: url(images/back.jpg);
   height: 700px;
+  width: 100%;
 }
 
 .layer {
@@ -62,8 +65,8 @@ h5 {
   height: 100%;
 }
 .form-select-menu {
-   height: 36.188px;
-   width: 94px;
+  height: 36.188px;
+  width: 94px;
   background: transparent;
   font-size: 16px;
   font-weight: 400;
@@ -72,9 +75,13 @@ h5 {
 .form-select-menu > option {
   background-color: grey;
 }
+.form-select-menu:focus-visible {
+  outline: none;
+}
 .top-sign-in {
   height: 36.188px;
   width: 94px;
+  overflow: hidden;
   padding-top: 5px;
   font-size: 16px;
   font-weight: 400;
@@ -86,15 +93,18 @@ h5 {
   background-color: #e50914;
 }
 .headerTitleOne {
-  font-size: 72px;
+  font-size: 70px;
+  overflow: hidden;
 }
 .headerTitleTwo {
-  font-size: 42px;
+  font-size: 40px;
+  overflow: hidden;
 }
 .headerTitleThree {
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 30px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .main-search input {
   height: 55px;
@@ -106,19 +116,21 @@ h5 {
   border: 0px;
   cursor: pointer;
 }
-.sec-h2{
-   font-size: 50px;
+.sec-h2 {
+  font-size: 50px;
+  overflow: hidden;
 }
 
-.sec-p{
-   font-size: 26px;
+.sec-p {
+  font-size: 26px;
 }
-.plusIcon{
+.plusIcon {
   float: right;
 }
-.faq-h2{
-   font-size: 50px;
-   font-weight: 500;
+.faq-h2 {
+  font-size: 50px;
+  font-weight: 500;
+  overflow: hidden;
 }
 .faq .btn {
   width: 100%;
@@ -131,7 +143,8 @@ h5 {
   margin-bottom: 5px;
   border-radius: 0px;
 }
-.btn-check:focus+.btn, .btn:focus {
+.btn-check:focus + .btn,
+.btn:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 25%);
 }
@@ -145,9 +158,9 @@ h5 {
   color: #fff;
   padding-left: 30px;
 }
-.bottomSearchPara{
-   font-size: 18px;
-   margin-top: 20px;
+.bottomSearchPara {
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 footer {
@@ -167,7 +180,7 @@ footer ul li {
 }
 
 footer a {
-font-size: 13px;
+  font-size: 13px;
   text-decoration: none;
   color: #757575;
 }
@@ -176,8 +189,8 @@ footer a:hover {
   color: #757575;
   text-decoration: underline;
 }
-.footerDropdown{
-   margin-top: 20px;
+.footerDropdown {
+  margin-top: 20px;
 }
 
 .form-select-menu2 {
@@ -189,12 +202,12 @@ footer a:hover {
 }
 
 .form-select-menu2 > option {
-   background-color: grey;
+  background-color: grey;
 }
-.footerCredits{
-   color: #757575;
-   font-size: 13px;
-   margin-left: 30px;
+.footerCredits {
+  color: #757575;
+  font-size: 13px;
+  margin-left: 30px;
 }
 @media (min-width: 1200px) {
   .main-search .input-group {
@@ -203,6 +216,21 @@ footer a:hover {
   }
 }
 
+@media (max-width: 860px) {
+  .headerTitleOne {
+    font-size: 60px;
+    margin-top: 100px;
+  }
+  .headerTitleTwo {
+    font-size: 40px;
+  }
+  .headerTitleThree {
+    font-size: 20px;
+  }
+  .form-select-menu {
+    font-size: 16px;
+  }
+}
 @media (max-width: 800px) {
   .layer h1 {
     font-size: 60px;
@@ -213,7 +241,7 @@ footer a:hover {
   .reverse {
     flex-direction: column-reverse;
   }
-  .textCenter768{
+  .textCenter768 {
     text-align: center;
   }
 }
@@ -251,14 +279,15 @@ footer a:hover {
   section p {
     font-size: 18px;
   }
-  .plusIcon{
+  .plusIcon {
     height: 28px;
     height: 28px;
   }
-}@media (max-width: 538px) {
-  .navbar-brand {
-  width: 140px;
 }
+@media (max-width: 538px) {
+  .navbar-brand {
+    width: 140px;
+  }
 }
 
 @media (max-width: 515px) {
@@ -301,24 +330,43 @@ footer a:hover {
     width: 100px;
   }
 }
-@media (max-width: 318px) {
-  .footerContainer {
-    margin-left: -20px;
+
+@media (max-width: 372px) {
+  .form-select-menu {
+    width: 74px;
+    background: transparent;
+    font-size: 14px !important;
+  }
+
+  .top-sign-in {
+    width: 74px;
+    font-size: 14px;
   }
 }
 
-@media (max-width: 860px) {
-  .headerTitleOne {
-    font-size: 60px;
-    margin-top: 100px;
+@media (max-width: 332px) {
+  .navbar-brand {
+    width: 90px;
   }
-  .headerTitleTwo{
-    font-size: 40px;
+  .form-select-menu {
+    height: 34px;
+    width: 62px;
+    background: transparent;
+    font-size: 11px !important;
   }
-  .headerTitleThree{
-    font-size: 20px;
+
+  .top-sign-in {
+    height: 30px;
+    width: 62px;
+    font-size: 11px;
   }
-  .form-select-menu{
-    font-size: 16px !important;
+  .mx-4 {
+    margin-right: 1.5rem !important;
+    margin-left: 0rem !important;
+  }
+}
+@media (max-width: 318px) {
+  .footerContainer {
+    margin-left: -20px;
   }
 }
