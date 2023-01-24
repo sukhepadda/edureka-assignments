@@ -76,3 +76,16 @@ P{
   font-size: 14px;
   margin: 6px;
 }
+.imgPInline{
+  display: flex;
+  align-items: center;
+  margin-bottom: -10px;
+}
+img{
+  height: 44px;  
+  width: 44px;  
+  margin-right: -12px;
+  margin-left: -10px;
+  
+
+}
