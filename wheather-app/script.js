@@ -32,3 +32,22 @@ btnId.addEventListener("click", () => {
       windSpeed.innerHTML = `Wind Speed: ${fetchSpeed}km/h`;
     });
 });
+fetch(
+  `https://api.openweathermap.org/data/2.5/weather?q=${"Tokyo"}&limit=1&current&&units=metric&appid=${API_KEY}`
+)
+  .then((res) => res.json())
+  .then((data) => {
+    let fetchCity = data.name;
+    let fetchTemp = data.main.temp;
+    let fetchSky = data.weather[0].description;
+    let fetchHumidity = data.main.humidity;
+    let fetchSpeed = data.wind.speed;
+    let fetchIcon = data.weather[0].icon;
+    console.log(data);
+    locationHead.innerText = `Wheather in ${fetchCity}`;
+    temp.innerHTML = `${fetchTemp}&#176; C`;
+    imgIcon.src = `http://openweathermap.org/img/wn/${fetchIcon}@2x.png`;
+    skyData.innerHTML = `${fetchSky}`;
+    humidity.innerHTML = `Humidity: ${fetchHumidity}%`;
+    windSpeed.innerHTML = `Wind Speed: ${fetchSpeed}km/h`;
+  });
