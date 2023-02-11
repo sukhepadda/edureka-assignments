@@ -1,0 +1,1 @@
+First type 'npm install' to install the required modules and then 'npm start' in terminal and then Use http://localhost:8000/delhi for restaurant data, and http://localhost:8000/widget for mealtype.
