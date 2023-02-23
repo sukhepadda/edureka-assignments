@@ -1,10 +1,10 @@
 import {bg} from "./images/bg.png"
-import {firstimg} from "./images/1.png"
-import {secondimg} from "./images/2.png"
-import {thirdimg} from "./images/3.png"
-import {fourthimg} from "./images/4.png"
-import {fifthimg} from "./images/5.png"
-import {sixthimg} from "./images/6.png"
+import firstimg from "./images/1.png"
+import secondimg from "./images/2.png"
+import thirdimg from "./images/3.png"
+import fourthimg from "./images/4.png"
+import fifthimg from "./images/5.png"
+import sixthimg from "./images/6.png"
 import './App.css';
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
                 <div className="col-lg-4">
                     <div className="row custum-card">
                         <div className="col-6">
-                            <img height="100%" width="100%" src="{firstimg}" alt="img not available" />
+                            <img height="100%" width="100%" src={firstimg} alt="img not available" />
                         </div>
                         <div className="col-6 card-info-div">
                             <h4 className="card-title">Breakfast</h4>
@@ -57,7 +57,7 @@ function App() {
 
                 <div className="col-lg-4">
                     <div className="row custum-card">
-                        <div className="col-6"> <img height="100%" width="100%" src="/images/2.png" alt="img not available" />
+                        <div className="col-6"> <img height="100%" width="100%" src={secondimg} alt="img not available" />
                         </div>
                         <div className="col-6 card-info-div">
                             <h4 className="card-title">Breakfast</h4>
@@ -68,7 +68,7 @@ function App() {
 
                 <div className="col-lg-4">
                     <div className="row custum-card">
-                        <div className="col-6"> <img height="100%" width="100%" src="/images/3.png" alt="img not available" />
+                        <div className="col-6"> <img height="100%" width="100%" src={thirdimg} alt="img not available" />
                         </div>
                         <div className="col-6 card-info-div">
                             <h4 className="card-title">Breakfast</h4>
@@ -79,7 +79,7 @@ function App() {
 
                 <div className="col-lg-4">
                     <div className="row custum-card">
-                        <div className="col-6"> <img height="100%" width="100%" src="/images/4.png" alt="img not available" />
+                        <div className="col-6"> <img height="100%" width="100%" src={fourthimg} alt="img not available" />
                         </div>
                         <div className="col-6 card-info-div">
                             <h4 className="card-title">Breakfast</h4>
@@ -90,7 +90,7 @@ function App() {
 
                 <div className="col-lg-4">
                     <div className="row custum-card">
-                        <div className="col-6"> <img height="100%" width="100%" src="/images/5.png" alt="img not available" />
+                        <div className="col-6"> <img height="100%" width="100%" src={fifthimg} alt="img not available" />
                         </div>
                         <div className="col-6 card-info-div">
                             <h4 className="card-title">Breakfast</h4>
@@ -101,7 +101,7 @@ function App() {
                 
                 <div className="col-lg-4">
                     <div className="row custum-card">
-                        <div className="col-6"> <img height="100%" width="100%" src="/images/6.png" alt="img not available" />
+                        <div className="col-6"> <img height="100%" width="100%" src={sixthimg} alt="img not available" />
                         </div>
                         <div className="col-6 card-info-div">
                             <h4 className="card-title">Breakfast</h4>
