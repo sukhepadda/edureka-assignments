@@ -1,0 +1,92 @@
+/* search icon done here */
+#second-section {
+    margin: 50px 0 50px 0;
+  }
+  
+  .second-section-title {
+    color: #192f60;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .second-section-title-para {
+    color: #8c96ab;
+  }
+  
+  .custum-card {
+    background-color: white;
+    border: none;
+    box-shadow: 0px 3px 6px #00000029;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+    margin: 15px;
+    /* padding: 20px; */
+    width: 360px;
+    height: 160px;
+  }
+  .custum-card > div > img {
+    width: 100%;
+    display: block;
+    margin-left: -12px;
+  }
+  
+  .custum-card:hover {
+    box-shadow: 1px 1px 10px rgb(126, 117, 117);
+    cursor: pointer;
+  }
+  .card-info-div {
+    padding: 30px 10px 0 0;
+  }
+  .card-title {
+    font-size: 18px;
+    color: #192f60;
+    margin-bottom: 4px;
+  }
+  .card-para {
+    font-size: 14px;
+    color: #8c96ab;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .custum-card {
+      width: 93%;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .logo {
+      width: 137px;
+      height: 137px;
+      color: #eb2929;
+      background-color: white;
+      font-size: 78px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 50px;
+    }
+    .search-box {
+      width: 400px;
+      height: 60px;
+      padding-left: 20px;
+      margin: auto 20px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .search-box2 {
+      width: 400px;
+      height: 60px;
+      padding-left: 20px;
+      margin: auto 20px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .logo-bottom {
+      display: block;
+      font-weight: bolder;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      margin: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }

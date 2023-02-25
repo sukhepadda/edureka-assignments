@@ -1,0 +1,108 @@
+
+#header-img {
+    position: relative;
+    width: 100vw;
+    height: 480px;
+    background-image: linear-gradient(
+        to right,
+        rgba(27, 26, 26, 0.295),
+        rgba(0, 0, 0, 0.185)
+      ),
+      url("../images/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header {
+    width: 120vw;
+    height: 60px;
+  }
+  
+  .nav-menu {
+    width: 60vw;
+    height: 60px;
+    margin-top: 15px;
+    /* position: fixed; */
+  }
+  
+  .navigation-link-p {
+    border: solid 0px white;
+    transition: border-bottom 0.1s ease;
+    cursor: pointer;
+  }
+  
+  .navigation-link-p:hover {
+    border-bottom: 3px solid white;
+  }
+  .navigation-link-btn {
+    height: 36px;
+    width: 181px;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid white;
+    font-weight: bolder;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: border-color 0.1s ease;
+    transition: color 0.1s ease;
+  }
+  .navigation-link-btn:hover {
+    color: rgb(85, 59, 59);
+    border: none;
+    background-color: wheat;
+  }
+  .logo-bottom {
+    display: block;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .logo {
+    width: 147px;
+    height: 147px;
+    color: #eb2929;
+    background-color: white;
+    font-size: 85px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 60px;
+  }
+  .search-box {
+    color: #636f88;
+    width: 245px;
+    height: 60px;
+    border: none;
+    padding-left: 20px;
+    margin: auto 20px;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .search-box2 {
+    color: #636f88;
+    width: 477px;
+    height: 60px;
+    border: none;
+    padding-left: 40px!important;
+    margin: auto 20px;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  /* for search icon */
+  .search-box2-div {
+      position: relative;
+  }
+    
+  .search-box2-div i{
+      position: absolute;
+      left: 35px;
+      top: 25px;
+      color: red;
+  }
