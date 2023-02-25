@@ -40,10 +40,12 @@
     font-size: 18px;
     color: #192f60;
     margin-bottom: 4px;
+    text-decoration: none !important;
   }
   .card-para {
     font-size: 14px;
     color: #8c96ab;
+    text-decoration: none !important;
   }
   
   @media only screen and (max-width: 1200px) {
@@ -90,3 +92,4 @@
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
   }
+ 

@@ -73,6 +73,11 @@
     margin: auto;
     margin-top: 60px;
   }
+  select{
+    appearance: none;
+    text-align: center;
+    padding: 0% !important;
+  }
   .search-box {
     color: #636f88;
     width: 245px;

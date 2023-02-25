@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function QuickSearchItem({ cardLink, cardImg, cardHead, cardPara }) {
+function QuickSearchItem({cardLink, cardImg, cardHead, cardPara }) {
   return (
-    <Link to={`/${cardLink}`}>
-      <div className="col-lg-4">
+    <div className="col-lg-4">
+      <Link to={`/${cardLink}`}>
         <div className="row custum-card">
           <div className="col">
             <img
@@ -19,8 +19,8 @@ function QuickSearchItem({ cardLink, cardImg, cardHead, cardPara }) {
             <p className="card-para">{cardPara}</p>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 }
 

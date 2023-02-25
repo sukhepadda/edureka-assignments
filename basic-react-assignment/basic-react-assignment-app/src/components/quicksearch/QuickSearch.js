@@ -1,4 +1,5 @@
 import React from "react";
+
 import QuickSearchItem from "./QuickSearchItem";
 
 import firstimg from "../../images/1.png";
@@ -24,37 +25,36 @@ function QuickSearch() {
             cardHead="Breakfast"
             cardPara="Start your day with exclusive breakfast options"
             cardLink="breakfast"
-
           />
           <QuickSearchItem
             cardImg={secondimg}
-            cardHead="Breakfast"
-            cardPara="Start your day with exclusive breakfast options"
-            cardLink="breakfast"
+            cardHead="Lunch"
+            cardPara="What you want's for your Lunch"
+            cardLink="lunch"
           />
           <QuickSearchItem
             cardImg={thirdimg}
-            cardHead="Breakfast"
-            cardPara="Start your day with exclusive breakfast options"
-            cardLink="breakfast"
+            cardHead="Snacks"
+            cardPara="Grab your Snacks from exclusive Snacks options"
+            cardLink="snacks"
           />
           <QuickSearchItem
             cardImg={fourthimg}
-            cardHead="Breakfast"
-            cardPara="Start your day with exclusive breakfast options"
-            cardLink="breakfast"
+            cardHead="Dinner"
+            cardPara="Get ready to have a Dinner"
+            cardLink="dinner"
           />
           <QuickSearchItem
             cardImg={fifthimg}
-            cardHead="Breakfast"
-            cardPara="Start your day with exclusive breakfast options"
-            cardLink="breakfast"
+            cardHead="Drinks"
+            cardPara="Order your Drinks Now"
+            cardLink="drinks"
           />
           <QuickSearchItem
             cardImg={sixthimg}
-            cardHead="Breakfast"
-            cardPara="Start your day with exclusive breakfast options"
-            cardLink="breakfast"
+            cardHead="Night Life"
+            cardPara="Enjoy your night life with your friends with best options"
+            cardLink="nightlife"
           />
         </div>
       </div>
