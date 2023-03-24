@@ -36,6 +36,9 @@
   .card-info-div {
     padding: 30px 10px 0 0;
   }
+  .cardLink{ 
+    text-decoration: none;
+  }
   .card-title {
     font-size: 18px;
     color: #192f60;

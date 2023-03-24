@@ -1,0 +1,22 @@
+.mainCont{
+    color: #192F60;
+}
+#btnOv{
+    color: red;
+}
+#contactId{
+display: none;
+}
+.img{
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+}
+.img-container{
+    position: relative;
+}
+.modalBtn{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

@@ -1,0 +1,44 @@
+.restaurantNavContainer{
+    background-color: red;
+}
+.restaurantNavBrand{
+    background-color: white;
+    color: red;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.restaurantNavBrand:hover{
+    color: red;
+}
+
+.navigation-link-p {
+    border: solid 0px white;
+    transition: border-bottom 0.1s ease;
+    cursor: pointer;
+  }
+  
+  .navigation-link-p:hover {
+    border-bottom: 3px solid white;
+  }
+  .navigation-link-btn {
+    height: 36px;
+    width: 181px;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid white;
+    font-weight: bolder;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: border-color 0.1s ease;
+    transition: color 0.1s ease;
+  }
+  .navigation-link-btn:hover {
+    color: white;
+    border: none;
+    background-color: white;
+  }

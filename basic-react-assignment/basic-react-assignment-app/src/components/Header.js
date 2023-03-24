@@ -33,9 +33,9 @@ function Header() {
             className="search-box"
             placeholder="Please type a location"
           /> */}
-          <select className="search-box">
+          <select className="search-box" disabled>
             {" "}
-            <option>Select a location</option>
+            <option>Delhi</option>
             <option value="Ludhiana">Ludhiana</option>
             <option value="Chandigarh">Chandigarh</option>
             <option value="Mumbai">Mumbai</option>
@@ -48,6 +48,7 @@ function Header() {
               type="text"
               className="search-box2"
               placeholder="Search for restaurants"
+              value={"Big Chill Cakery"}   
             />
             <i className="fa fa-search"></i>
           </div>

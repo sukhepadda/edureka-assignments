@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function QuickSearchItem({cardLink, cardImg, cardHead, cardPara }) {
   return (
     <div className="col-lg-4">
-      <Link to={`/${cardLink}`}>
+      <Link className="cardLink" to={`/${cardLink}`}>
         <div className="row custum-card">
           <div className="col">
             <img
